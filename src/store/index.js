@@ -11,25 +11,25 @@ export const store = new Vuex.Store({
 			{
 			  id: 1,
 			  amount: 100,
-			  date: new Date('2018-10-10'),
+			  date: new Date('2018-11-11'),
 			  description: "Коммунальные платежи"
 			},
 			{
 			  id: 2,
 			  amount: 500,
-			  date: new Date('2018-10-10'),
+			  date: new Date('2018-11-03'),
 			  description: "Продукты"
 			},
 			{
 			  id: 3,
 			  amount: 300,
-			  date: new Date('2018-10-13'),
+			  date: new Date('2018-11-02'),
 			  description: "Кредит"
 			},
 			{
 			  id: 4,
 			  amount: 500,
-			  date: new Date('2018-10-10'),
+			  date: new Date('2018-11-02'),
 			  description: "Развлечения"
 			}
 		],
@@ -78,7 +78,8 @@ export const store = new Vuex.Store({
 		}
 	},
 	getters:{
-		listExpenses(state){	
+		listExpenses(state){
+			console.log(typeof(state.listExpenses[0].date))
 			return state.listExpenses			
 		},
 		getExpense(state){

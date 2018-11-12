@@ -98,7 +98,7 @@
 								</v-flex>
 							</v-layout>
 							<v-layout hidden-sm-and-down>
-								<v-flex>
+								<v-flex sm5 lg4 xl3>
 									<v-select
 									  class="sort"
 									  :items="sortList"
